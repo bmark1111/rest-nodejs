@@ -1,0 +1,330 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@1.2.18
+3 info using node@v0.10.5
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose read json c:\xampp\htdocs\nodejs\package.json
+6 warn package.json RESTful-API@0.0.1 No README.md file found!
+7 verbose readDependencies using package.json deps
+8 verbose install where, deps [ 'c:\\xampp\\htdocs\\nodejs',
+8 verbose install   [ 'express', 'mysql', 'body-parser', 'md5', 'mongoose' ] ]
+9 verbose from cache c:\xampp\htdocs\nodejs\package.json
+10 info preinstall RESTful-API@0.0.1
+11 verbose read json c:\xampp\htdocs\nodejs\node_modules\body-parser\package.json
+12 verbose read json c:\xampp\htdocs\nodejs\node_modules\express\package.json
+13 verbose read json c:\xampp\htdocs\nodejs\node_modules\md5\package.json
+14 verbose read json c:\xampp\htdocs\nodejs\node_modules\mysql\package.json
+15 verbose read json c:\xampp\htdocs\nodejs\node_modules\npm-debug.log\package.json
+16 verbose read json c:\xampp\htdocs\nodejs\node_modules\package.json\package.json
+17 verbose read json c:\xampp\htdocs\nodejs\node_modules\Server.js\package.json
+18 verbose read json c:\xampp\htdocs\nodejs\node_modules\xxREST.js\package.json
+19 verbose from cache c:\xampp\htdocs\nodejs\package.json
+20 verbose readDependencies using package.json deps
+21 verbose from cache c:\xampp\htdocs\nodejs\node_modules\body-parser\package.json
+22 verbose from cache c:\xampp\htdocs\nodejs\node_modules\express\package.json
+23 verbose from cache c:\xampp\htdocs\nodejs\node_modules\md5\package.json
+24 verbose from cache c:\xampp\htdocs\nodejs\node_modules\mysql\package.json
+25 verbose read json c:\xampp\htdocs\nodejs\node_modules\npm-debug.log\package.json
+26 verbose read json c:\xampp\htdocs\nodejs\node_modules\package.json\package.json
+27 verbose read json c:\xampp\htdocs\nodejs\node_modules\Server.js\package.json
+28 verbose read json c:\xampp\htdocs\nodejs\node_modules\xxREST.js\package.json
+29 verbose cache add [ 'express@~4.12.2', null ]
+30 verbose cache add name=undefined spec="express@~4.12.2" args=["express@~4.12.2",null]
+31 verbose parsed url { protocol: null,
+31 verbose parsed url   slashes: null,
+31 verbose parsed url   auth: null,
+31 verbose parsed url   host: null,
+31 verbose parsed url   port: null,
+31 verbose parsed url   hostname: null,
+31 verbose parsed url   hash: null,
+31 verbose parsed url   search: null,
+31 verbose parsed url   query: null,
+31 verbose parsed url   pathname: 'express@~4.12.2',
+31 verbose parsed url   path: 'express@~4.12.2',
+31 verbose parsed url   href: 'express@~4.12.2' }
+32 verbose cache add name="express" spec="~4.12.2" args=["express","~4.12.2"]
+33 verbose parsed url { protocol: null,
+33 verbose parsed url   slashes: null,
+33 verbose parsed url   auth: null,
+33 verbose parsed url   host: null,
+33 verbose parsed url   port: null,
+33 verbose parsed url   hostname: null,
+33 verbose parsed url   hash: null,
+33 verbose parsed url   search: null,
+33 verbose parsed url   query: null,
+33 verbose parsed url   pathname: '~4.12.2',
+33 verbose parsed url   path: '~4.12.2',
+33 verbose parsed url   href: '~4.12.2' }
+34 verbose addNamed [ 'express', '~4.12.2' ]
+35 verbose addNamed [ null, '>=4.12.2- <4.13.0-' ]
+36 verbose cache add [ 'mysql@~2.5.5', null ]
+37 verbose cache add name=undefined spec="mysql@~2.5.5" args=["mysql@~2.5.5",null]
+38 verbose parsed url { protocol: null,
+38 verbose parsed url   slashes: null,
+38 verbose parsed url   auth: null,
+38 verbose parsed url   host: null,
+38 verbose parsed url   port: null,
+38 verbose parsed url   hostname: null,
+38 verbose parsed url   hash: null,
+38 verbose parsed url   search: null,
+38 verbose parsed url   query: null,
+38 verbose parsed url   pathname: 'mysql@~2.5.5',
+38 verbose parsed url   path: 'mysql@~2.5.5',
+38 verbose parsed url   href: 'mysql@~2.5.5' }
+39 verbose cache add name="mysql" spec="~2.5.5" args=["mysql","~2.5.5"]
+40 verbose parsed url { protocol: null,
+40 verbose parsed url   slashes: null,
+40 verbose parsed url   auth: null,
+40 verbose parsed url   host: null,
+40 verbose parsed url   port: null,
+40 verbose parsed url   hostname: null,
+40 verbose parsed url   hash: null,
+40 verbose parsed url   search: null,
+40 verbose parsed url   query: null,
+40 verbose parsed url   pathname: '~2.5.5',
+40 verbose parsed url   path: '~2.5.5',
+40 verbose parsed url   href: '~2.5.5' }
+41 verbose addNamed [ 'mysql', '~2.5.5' ]
+42 verbose addNamed [ null, '>=2.5.5- <2.6.0-' ]
+43 verbose cache add [ 'body-parser@~1.12.0', null ]
+44 verbose cache add name=undefined spec="body-parser@~1.12.0" args=["body-parser@~1.12.0",null]
+45 verbose parsed url { protocol: null,
+45 verbose parsed url   slashes: null,
+45 verbose parsed url   auth: null,
+45 verbose parsed url   host: null,
+45 verbose parsed url   port: null,
+45 verbose parsed url   hostname: null,
+45 verbose parsed url   hash: null,
+45 verbose parsed url   search: null,
+45 verbose parsed url   query: null,
+45 verbose parsed url   pathname: 'body-parser@~1.12.0',
+45 verbose parsed url   path: 'body-parser@~1.12.0',
+45 verbose parsed url   href: 'body-parser@~1.12.0' }
+46 verbose cache add name="body-parser" spec="~1.12.0" args=["body-parser","~1.12.0"]
+47 verbose parsed url { protocol: null,
+47 verbose parsed url   slashes: null,
+47 verbose parsed url   auth: null,
+47 verbose parsed url   host: null,
+47 verbose parsed url   port: null,
+47 verbose parsed url   hostname: null,
+47 verbose parsed url   hash: null,
+47 verbose parsed url   search: null,
+47 verbose parsed url   query: null,
+47 verbose parsed url   pathname: '~1.12.0',
+47 verbose parsed url   path: '~1.12.0',
+47 verbose parsed url   href: '~1.12.0' }
+48 verbose addNamed [ 'body-parser', '~1.12.0' ]
+49 verbose addNamed [ null, '>=1.12.0- <1.13.0-' ]
+50 verbose cache add [ 'md5@~1.2.1', null ]
+51 verbose cache add name=undefined spec="md5@~1.2.1" args=["md5@~1.2.1",null]
+52 verbose parsed url { protocol: null,
+52 verbose parsed url   slashes: null,
+52 verbose parsed url   auth: null,
+52 verbose parsed url   host: null,
+52 verbose parsed url   port: null,
+52 verbose parsed url   hostname: null,
+52 verbose parsed url   hash: null,
+52 verbose parsed url   search: null,
+52 verbose parsed url   query: null,
+52 verbose parsed url   pathname: 'md5@~1.2.1',
+52 verbose parsed url   path: 'md5@~1.2.1',
+52 verbose parsed url   href: 'md5@~1.2.1' }
+53 verbose cache add name="md5" spec="~1.2.1" args=["md5","~1.2.1"]
+54 verbose parsed url { protocol: null,
+54 verbose parsed url   slashes: null,
+54 verbose parsed url   auth: null,
+54 verbose parsed url   host: null,
+54 verbose parsed url   port: null,
+54 verbose parsed url   hostname: null,
+54 verbose parsed url   hash: null,
+54 verbose parsed url   search: null,
+54 verbose parsed url   query: null,
+54 verbose parsed url   pathname: '~1.2.1',
+54 verbose parsed url   path: '~1.2.1',
+54 verbose parsed url   href: '~1.2.1' }
+55 verbose addNamed [ 'md5', '~1.2.1' ]
+56 verbose addNamed [ null, '>=1.2.1- <1.3.0-' ]
+57 verbose cache add [ 'mongoose@~3.8.11', null ]
+58 verbose cache add name=undefined spec="mongoose@~3.8.11" args=["mongoose@~3.8.11",null]
+59 verbose parsed url { protocol: null,
+59 verbose parsed url   slashes: null,
+59 verbose parsed url   auth: null,
+59 verbose parsed url   host: null,
+59 verbose parsed url   port: null,
+59 verbose parsed url   hostname: null,
+59 verbose parsed url   hash: null,
+59 verbose parsed url   search: null,
+59 verbose parsed url   query: null,
+59 verbose parsed url   pathname: 'mongoose@~3.8.11',
+59 verbose parsed url   path: 'mongoose@~3.8.11',
+59 verbose parsed url   href: 'mongoose@~3.8.11' }
+60 verbose cache add name="mongoose" spec="~3.8.11" args=["mongoose","~3.8.11"]
+61 verbose parsed url { protocol: null,
+61 verbose parsed url   slashes: null,
+61 verbose parsed url   auth: null,
+61 verbose parsed url   host: null,
+61 verbose parsed url   port: null,
+61 verbose parsed url   hostname: null,
+61 verbose parsed url   hash: null,
+61 verbose parsed url   search: null,
+61 verbose parsed url   query: null,
+61 verbose parsed url   pathname: '~3.8.11',
+61 verbose parsed url   path: '~3.8.11',
+61 verbose parsed url   href: '~3.8.11' }
+62 verbose addNamed [ 'mongoose', '~3.8.11' ]
+63 verbose addNamed [ null, '>=3.8.11- <3.9.0-' ]
+64 silly lockFile 702f5120-express-4-12-2 express@~4.12.2
+65 verbose lock express@~4.12.2 C:\Users\Brian\AppData\Roaming\npm-cache\702f5120-express-4-12-2.lock
+66 silly lockFile 1aba79e5-mysql-2-5-5 mysql@~2.5.5
+67 verbose lock mysql@~2.5.5 C:\Users\Brian\AppData\Roaming\npm-cache\1aba79e5-mysql-2-5-5.lock
+68 silly lockFile 6121e062-body-parser-1-12-0 body-parser@~1.12.0
+69 verbose lock body-parser@~1.12.0 C:\Users\Brian\AppData\Roaming\npm-cache\6121e062-body-parser-1-12-0.lock
+70 silly lockFile 2d90ceb9-md5-1-2-1 md5@~1.2.1
+71 verbose lock md5@~1.2.1 C:\Users\Brian\AppData\Roaming\npm-cache\2d90ceb9-md5-1-2-1.lock
+72 silly lockFile daa9d1ec-mongoose-3-8-11 mongoose@~3.8.11
+73 verbose lock mongoose@~3.8.11 C:\Users\Brian\AppData\Roaming\npm-cache\daa9d1ec-mongoose-3-8-11.lock
+74 silly addNameRange { name: 'express', range: '>=4.12.2- <4.13.0-', hasData: false }
+75 silly addNameRange { name: 'body-parser',
+75 silly addNameRange   range: '>=1.12.0- <1.13.0-',
+75 silly addNameRange   hasData: false }
+76 silly addNameRange { name: 'md5', range: '>=1.2.1- <1.3.0-', hasData: false }
+77 silly addNameRange { name: 'mongoose', range: '>=3.8.11- <3.9.0-', hasData: false }
+78 silly addNameRange { name: 'mysql', range: '>=2.5.5- <2.6.0-', hasData: false }
+79 verbose url raw mongoose
+80 verbose url resolving [ 'https://registry.npmjs.org/', './mongoose' ]
+81 verbose url resolved https://registry.npmjs.org/mongoose
+82 info trying registry request attempt 1 at 16:01:06
+83 http GET https://registry.npmjs.org/mongoose
+84 verbose url raw express
+85 verbose url resolving [ 'https://registry.npmjs.org/', './express' ]
+86 verbose url resolved https://registry.npmjs.org/express
+87 info trying registry request attempt 1 at 16:01:06
+88 verbose etag "9K805D9Q6DM747T1AGJFI0F9D"
+89 http GET https://registry.npmjs.org/express
+90 verbose url raw body-parser
+91 verbose url resolving [ 'https://registry.npmjs.org/', './body-parser' ]
+92 verbose url resolved https://registry.npmjs.org/body-parser
+93 info trying registry request attempt 1 at 16:01:06
+94 verbose etag "3SXQDU56ST8NF795KDJ4S8IEJ"
+95 http GET https://registry.npmjs.org/body-parser
+96 verbose url raw mysql
+97 verbose url resolving [ 'https://registry.npmjs.org/', './mysql' ]
+98 verbose url resolved https://registry.npmjs.org/mysql
+99 info trying registry request attempt 1 at 16:01:06
+100 verbose etag "3H8CGYRGUWZN7WZ9LI70YS65W"
+101 http GET https://registry.npmjs.org/mysql
+102 verbose url raw md5
+103 verbose url resolving [ 'https://registry.npmjs.org/', './md5' ]
+104 verbose url resolved https://registry.npmjs.org/md5
+105 info trying registry request attempt 1 at 16:01:06
+106 verbose etag "63NWZ3GHCCFLNVV9W63K13IZ"
+107 http GET https://registry.npmjs.org/md5
+108 http 304 https://registry.npmjs.org/md5
+109 silly registry.get cb [ 304,
+109 silly registry.get   { date: 'Mon, 03 Aug 2015 23:01:05 GMT',
+109 silly registry.get     via: '1.1 varnish',
+109 silly registry.get     'cache-control': 'max-age=60',
+109 silly registry.get     etag: '"63NWZ3GHCCFLNVV9W63K13IZ"',
+109 silly registry.get     age: '46',
+109 silly registry.get     connection: 'keep-alive',
+109 silly registry.get     'x-served-by': 'cache-lax1422-LAX',
+109 silly registry.get     'x-cache': 'HIT',
+109 silly registry.get     'x-cache-hits': '1',
+109 silly registry.get     'x-timer': 'S1438642865.065994,VS0,VE0',
+109 silly registry.get     vary: 'Accept' } ]
+110 verbose etag md5 from cache
+111 http 304 https://registry.npmjs.org/mysql
+112 silly registry.get cb [ 304,
+112 silly registry.get   { date: 'Mon, 03 Aug 2015 23:01:05 GMT',
+112 silly registry.get     via: '1.1 varnish',
+112 silly registry.get     'cache-control': 'max-age=60',
+112 silly registry.get     etag: '"3H8CGYRGUWZN7WZ9LI70YS65W"',
+112 silly registry.get     age: '6',
+112 silly registry.get     connection: 'keep-alive',
+112 silly registry.get     'x-served-by': 'cache-lax1431-LAX',
+112 silly registry.get     'x-cache': 'HIT',
+112 silly registry.get     'x-cache-hits': '1',
+112 silly registry.get     'x-timer': 'S1438642865.065952,VS0,VE1',
+112 silly registry.get     vary: 'Accept' } ]
+113 verbose etag mysql from cache
+114 silly addNameRange number 2 { name: 'mysql', range: '>=2.5.5- <2.6.0-', hasData: true }
+115 silly addNameRange versions [ 'mysql',
+115 silly addNameRange   [ '0.1.0',
+115 silly addNameRange     '0.2.0',
+115 silly addNameRange     '0.3.0',
+115 silly addNameRange     '0.4.0',
+115 silly addNameRange     '0.5.0',
+115 silly addNameRange     '0.6.0',
+115 silly addNameRange     '0.7.0',
+115 silly addNameRange     '0.8.0',
+115 silly addNameRange     '0.9.0',
+115 silly addNameRange     '0.9.1',
+115 silly addNameRange     '0.9.2',
+115 silly addNameRange     '0.9.3',
+115 silly addNameRange     '0.9.4',
+115 silly addNameRange     '0.9.5',
+115 silly addNameRange     '0.9.6',
+115 silly addNameRange     '2.0.0-alpha',
+115 silly addNameRange     '2.0.0-alpha2',
+115 silly addNameRange     '2.0.0-alpha3',
+115 silly addNameRange     '2.0.0-alpha4',
+115 silly addNameRange     '2.0.0-alpha5',
+115 silly addNameRange     '2.0.0-alpha6',
+115 silly addNameRange     '2.0.0-alpha7',
+115 silly addNameRange     '2.0.0-alpha8',
+115 silly addNameRange     '2.0.0-alpha9',
+115 silly addNameRange     '2.0.0-rc1',
+115 silly addNameRange     '2.0.0-rc2',
+115 silly addNameRange     '2.0.0',
+115 silly addNameRange     '2.0.1',
+115 silly addNameRange     '2.1.0',
+115 silly addNameRange     '2.1.1',
+115 silly addNameRange     '2.2.0',
+115 silly addNameRange     '2.3.0',
+115 silly addNameRange     '2.3.1',
+115 silly addNameRange     '2.3.2',
+115 silly addNameRange     '2.4.0',
+115 silly addNameRange     '2.4.1',
+115 silly addNameRange     '2.4.2',
+115 silly addNameRange     '2.4.3',
+115 silly addNameRange     '2.5.0',
+115 silly addNameRange     '2.5.1',
+115 silly addNameRange     '2.5.2',
+115 silly addNameRange     '2.5.3',
+115 silly addNameRange     '2.5.4',
+115 silly addNameRange     '2.5.5',
+115 silly addNameRange     '2.6.0',
+115 silly addNameRange     '2.6.1',
+115 silly addNameRange     '2.6.2',
+115 silly addNameRange     '2.7.0',
+115 silly addNameRange     '2.8.0' ] ]
+116 verbose addNamed [ 'mysql', '2.5.5' ]
+117 verbose addNamed [ '2.5.5', '2.5.5' ]
+118 silly lockFile 11f73953-mysql-2-5-5 mysql@2.5.5
+119 verbose lock mysql@2.5.5 C:\Users\Brian\AppData\Roaming\npm-cache\11f73953-mysql-2-5-5.lock
+120 silly addNameRange number 2 { name: 'md5', range: '>=1.2.1- <1.3.0-', hasData: true }
+121 silly addNameRange versions [ 'md5', [ '1.0.1', '1.0.0', '2.0.0' ] ]
+122 silly lockFile 2d90ceb9-md5-1-2-1 md5@~1.2.1
+123 silly lockFile 2d90ceb9-md5-1-2-1 md5@~1.2.1
+124 silly lockFile fe1c0033--npmjs-org-mysql-mysql-2-5-5-tgz https://registry.npmjs.org/mysql/-/mysql-2.5.5.tgz
+125 verbose lock https://registry.npmjs.org/mysql/-/mysql-2.5.5.tgz C:\Users\Brian\AppData\Roaming\npm-cache\fe1c0033--npmjs-org-mysql-mysql-2-5-5-tgz.lock
+126 error Error: No compatible version found: md5@'>=1.2.1- <1.3.0-'
+126 error Valid install targets:
+126 error ["1.0.1","1.0.0","2.0.0"]
+126 error     at installTargetsError (C:\Program Files\nodejs\node_modules\npm\lib\cache.js:685:10)
+126 error     at next (C:\Program Files\nodejs\node_modules\npm\lib\cache.js:664:17)
+126 error     at C:\Program Files\nodejs\node_modules\npm\lib\cache.js:644:5
+126 error     at saved (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\get.js:138:7)
+126 error     at Object.oncomplete (fs.js:107:15)
+127 error If you need help, you may report this log at:
+127 error     <http://github.com/isaacs/npm/issues>
+127 error or email it to:
+127 error     <npm-@googlegroups.com>
+128 error System Windows_NT 6.1.7601
+129 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+130 error cwd c:\xampp\htdocs\nodejs
+131 error node -v v0.10.5
+132 error npm -v 1.2.18
+133 verbose exit [ 1, true ]
