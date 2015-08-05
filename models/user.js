@@ -10,45 +10,69 @@ var userModel = function () {
 userModel.prototype.connection = false;
 userModel.prototype.data = {};
 
-userModel.prototype.list = function (callback) {
-//console.log('user model list');
+userModel.prototype.list = function (callback, errCallback) {
 	this.data = db.get(false,
 		function(data)
 		{
-//console.log(data);
-//console.log('xxxxxxxxxxxxxx');
 			this.data = data;
 			callback(data);
+		},
+		function(err)
+		{
+			errCallback(err);
 		});
 }
 
-userModel.prototype.retrieve = function (id, callback) {
-//console.log('user model retrieve');
+userModel.prototype.retrieve = function (id, callback, errCallback) {
 	this.data = db.get(id,
 		function(data)
 		{
 			this.data = data;
 			callback(data);
+		},
+		function(err)
+		{
+			errCallback(err);
 		});
 };
 
-userModel.prototype.create = function (body, callback) {
-console.log('user model create');
+userModel.prototype.create = function (body, callback, errCallback) {
 	this.data = db.create(body,
 		function(data)
 		{
 			this.data = data;
 			callback(data);
+		},
+		function(err)
+		{
+			errCallback(err);
 		});
 };
 
-userModel.prototype.update = function (body, callback) {
-console.log('user model update');
+userModel.prototype.update = function (body, callback, errCallback) {
+	body = this.sanitize(body);
 	this.data = db.update(body,
 		function(data)
 		{
 			this.data = data;
 			callback(data);
+		},
+		function(err)
+		{
+			errCallback(err);
+		});
+};
+
+userModel.prototype.remove = function (id, callback, errCallback) {
+	this.data = db.remove(id,
+		function(data)
+		{
+			this.data = data;
+			callback(data);
+		},
+		function(err)
+		{
+			errCallback(err);
 		});
 };
 

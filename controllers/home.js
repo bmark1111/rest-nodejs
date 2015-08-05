@@ -1,17 +1,9 @@
-//var Video = require('../models/user');
-
-//module.exports.controller = function(req, res) {
-////	console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX');
-//	res.json({"Message" : "home controller xxxx"});
-//	return;
-//};
-
-function homeController(req, res) {//, connection) {
+function homeController(req, res) {
 	var self = this;
-	self.init(req, res);//, connection);
+	self.init(req, res);
 };
 
-homeController.prototype.init = function(req, res) {//, connection) {
+homeController.prototype.init = function(req, res) {
 	var self = this;
 
 	res.json({"Message" : "home controller"});
