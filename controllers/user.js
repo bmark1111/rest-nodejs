@@ -49,8 +49,10 @@ userController.prototype.create = function() {
 	var self = this;
 
 	var user = new userModel();
-	self.req.body.password = md5(self.req.body.password);
-	user.create(self.req.body,
+//	self.req.body.user_password = md5(self.req.body.user_password);
+	user.data.user_email	= self.req.body.user_email;
+	user.data.user_password	= md5(self.req.body.user_password);
+	user.create(//self.req.body,
 		function(data)
 		{
 			self.res.json({"Success" : 1, "Message" : "User Added !"});
@@ -65,11 +67,11 @@ userController.prototype.update = function() {
 	var self = this;
 
 	var user = new userModel();
-	self.req.body.password = md5(self.req.body.password);
+	self.req.body.user_password = md5(self.req.body.user_password);
 	user.update(self.req.body,
 		function(data)
 		{
-			self.res.json({"Success" : 1, "Message" : "Updated the password for email " + self.req.body.email});
+			self.res.json({"Success" : 1, "Message" : "Updated the password for email " + self.req.body.user_email});
 		},
 		function(err)
 		{
@@ -81,10 +83,10 @@ userController.prototype.remove = function() {
 	var self = this;
 
 	var user = new userModel();
-	user.remove(self.req.params.email,
+	user.remove(self.req.params.user_id,
 		function(data)
 		{
-			self.res.json({"Success" : 1, "Message" : "Deleted the user with email " + self.req.params.email});
+			self.res.json({"Success" : 1, "Message" : "Deleted the user with email " + self.req.params.user_id});
 		},
 		function(err)
 		{
