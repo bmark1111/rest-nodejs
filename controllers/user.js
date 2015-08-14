@@ -34,7 +34,7 @@ userController.prototype.retrieve = function() {
 	var self = this;
 
 	var user = new userModel();
-	user.retrieve(self.req.params.user_id,
+	user.retrieve(self.req.params.id,
 		function(data)
 		{
 			self.res.json({"Success" : 1, "Message" : "Success", "Users" : data});
@@ -49,8 +49,8 @@ userController.prototype.create = function() {
 	var self = this;
 
 	var user = new userModel();
-	user.data.user_email	= self.req.body.user_email;
-	user.data.user_password	= md5(self.req.body.user_password);
+	user.data.email	= self.req.body.email;
+	user.data.pass	= md5(self.req.body.pass);
 	user.create(
 		function(data)
 		{
@@ -66,12 +66,12 @@ userController.prototype.update = function() {
 	var self = this;
 
 	var user = new userModel();
-	user.data.user_email	= self.req.body.user_email;
-	user.data.user_password	= md5(self.req.body.user_password);
-	user.update(self.req.params.user_id,
+	user.data.email	= self.req.body.email;
+	user.data.pass	= md5(self.req.body.pass);
+	user.update(self.req.params.id,
 		function(data)
 		{
-			self.res.json({"Success" : 1, "Message" : "Updated the user with user id = " + self.req.params.user_id});
+			self.res.json({"Success" : 1, "Message" : "Updated the user with user id = " + self.req.params.id});
 		},
 		function(err)
 		{
@@ -83,10 +83,10 @@ userController.prototype.remove = function() {
 	var self = this;
 
 	var user = new userModel();
-	user.remove(self.req.params.user_id,
+	user.remove(self.req.params.id,
 		function(data)
 		{
-			self.res.json({"Success" : 1, "Message" : "Deleted the user with user id = " + self.req.params.user_id});
+			self.res.json({"Success" : 1, "Message" : "Deleted the user with user id = " + self.req.params.id});
 		},
 		function(err)
 		{

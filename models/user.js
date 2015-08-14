@@ -2,15 +2,15 @@ var schemas	= require("../node_modules/schemas.js");
 var _		= require("lodash");
 
 var userModel = function () {
-	db.table = 'user_login';
+	db.table = 'user';
+	this.primary = Object.keys(schemas.userModel)[0];
 };
 
-//userModel.prototype.connection = false;
 userModel.prototype.data = {};
 
 userModel.prototype.list = function (callback, errCallback) {
 	db.select();
-	db.where({'is_deleted': 0});
+	db.where('is_deleted', 0);
 	db.query(
 		function(data)
 		{
@@ -25,8 +25,8 @@ userModel.prototype.list = function (callback, errCallback) {
 
 userModel.prototype.retrieve = function (id, callback, errCallback) {
 	db.select();
-	db.where({'user_id': id});
-	db.where({'is_deleted': 0});
+	db.where(this.primary, id);
+	db.where('is_deleted', 0);
 	db.query(
 		function(data)
 		{
@@ -60,7 +60,7 @@ userModel.prototype.update = function (id, callback, errCallback) {
 	this.data = this.sanitize(this.data);
 	this.data = this.scrub(this.data);
 	db.update(this.data);
-	db.where({'user_id': id});
+	db.where(this.primary, id);
 	db.query(
 		function(data)
 		{
@@ -75,7 +75,7 @@ userModel.prototype.update = function (id, callback, errCallback) {
 
 userModel.prototype.remove = function (id, callback, errCallback) {
 	db.remove();
-	db.where({'user_id': id});
+	db.where(this.primary, id);
 	db.query(
 		function(data)
 		{
