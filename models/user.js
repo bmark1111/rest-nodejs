@@ -5,11 +5,12 @@ var userModel = function () {
 	db.table = 'user_login';
 };
 
-userModel.prototype.connection = false;
+//userModel.prototype.connection = false;
 userModel.prototype.data = {};
 
 userModel.prototype.list = function (callback, errCallback) {
 	db.select();
+	db.where({'is_deleted': 0});
 	db.query(
 		function(data)
 		{
@@ -25,6 +26,7 @@ userModel.prototype.list = function (callback, errCallback) {
 userModel.prototype.retrieve = function (id, callback, errCallback) {
 	db.select();
 	db.where({'user_id': id});
+	db.where({'is_deleted': 0});
 	db.query(
 		function(data)
 		{
